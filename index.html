@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>DOM Selection & Manipulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>DOM Selection & Manipulation</h1>
+  </header>
+
+  <section class="container">
+    <form id="my-form">
+      <h1>Todo</h1>
+      <div class="msg"></div>
+      <div>
+        <label for="todo">Name:</label>
+        <input type="text" name="todo" id="todo">
+      </div>
+      <div>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+      </div>
+      <div>
+        <input type="checkbox" name="completed" id="completed" aria-label="completed"/>
+      </div>
+      <input class="btn" type="submit" value="Submit">
+    </form>
+
+    <ul class="items">
+      <li class="item">Item 1</li>
+    </ul>
+  </section>
+
+
+  <script src="index.js"></script>
+</body>
+
 </html>
